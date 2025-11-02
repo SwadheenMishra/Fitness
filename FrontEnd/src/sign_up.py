@@ -1,5 +1,9 @@
 import flet as ft
 from flet import Colors
+import OTP
+
+def send_otp(page: ft.Page):
+    OTP.main(page)
 
 def main(page: ft.Page):
     page.clean()
@@ -95,6 +99,7 @@ def main(page: ft.Page):
                             color={ft.ControlState.DEFAULT: Colors.WHITE},
                             side={ft.ControlState.DEFAULT: ft.BorderSide(1, Colors.WHITE)},
                         ),
+                        on_click=lambda _: send_otp(page)
                     ),
                     ft.Container(height=40),
                 ],

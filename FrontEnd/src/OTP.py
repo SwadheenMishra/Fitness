@@ -55,14 +55,14 @@ def main(page: ft.Page):
                         width=320,
                     ),
                     ft.Container(height=5),
-                    ft.OutlinedButton(
+                    ft.ElevatedButton(
                         text="Create Account",
+                        bgcolor=Colors.BLUE_ACCENT,
+                        color=Colors.WHITE,
                         width=320,
                         height=50,
                         style=ft.ButtonStyle(
                             shape=ft.RoundedRectangleBorder(radius=14),
-                            color={ft.ControlState.DEFAULT: Colors.WHITE},
-                            side={ft.ControlState.DEFAULT: ft.BorderSide(1, Colors.WHITE)},
                         ),
                     ),
                     ft.Container(height=40),

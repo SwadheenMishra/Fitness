@@ -7,7 +7,6 @@ def main(page: ft.Page):
     page.window.height = 725
     page.window.width = 465
 
-
     if not LogedIn:
         Login.main(page)
 
